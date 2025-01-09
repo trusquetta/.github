@@ -1,6 +1,8 @@
 ## TRUSQUETTA
 
-この内容は [.github/profile/README.md](.github/profile/README.md) で編集できます。
+ここはTRUSQUETTAの新しいOrganizationです。
+旧AWCの組織からリソースの SAKURA → AWS移行 とともリポジトリを移行中です。
+旧組織は [https://github.com/artworksconsulting](https://github.com/artworksconsulting) になります。
 
 <!--
 
