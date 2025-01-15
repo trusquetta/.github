@@ -1,16 +1,18 @@
-## TRUSQUETTA
+# TRUSQUETTA
 
 ここはTRUSQUETTAの新しいOrganizationです。  
 旧AWCの組織からリソースの SAKURA → AWS移行 とともリポジトリを移行中です。  
 旧組織は [https://github.com/artworksconsulting](https://github.com/artworksconsulting) になります。  
 
-<!--
+## コーディング規約
 
-**Here are some ideas to get you started:**
+細かい指定はしません。  
+基本的な考え方、制作ステップを守って記述して下さい。
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+- 設計・実装時は実行ステップを第一に考えましょう。（要件定義と実装のブレをなくす）
+- 関数の実装は、実行ステップが視覚的に見やすくなるよう細かい処理は共通関数に切り出して記述します。（可読性）
+- 使い回しが効かないので、１つの関数に色々なことをさせ過ぎないこと。（メンテナンス性）
+- 関数は上下の階層分けをきちんと定義し、下位レイヤー関数から上位レイヤー関数を呼び出すことがないよう注意しましょう。（スパゲッティ化対策）
+- JS/TSの場合、基本的には対象ファイルと同じ階層に同名で.spec.jsを作成します。例外はままあります。（テスト容易性）
+
+最低限この辺りを頭に入れておくだけで、**見にくい / 場当たり的 / ダラダラと長い** 後任がメンテしにくいソースコードにはなりにくいと思います。
